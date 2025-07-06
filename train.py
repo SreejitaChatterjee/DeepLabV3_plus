@@ -52,7 +52,7 @@ transform = transforms.Compose([
 
 # dataset & loader
 dataset = CustomDataset(IMG_DIR, MASK_DIR, transform=transform)
-dataloader = DataLoader(dataset, batch_size=2, shuffle=True)
+dataloader = DataLoader(dataset, batch_size=5, shuffle=True)
 
 # model
 model = deeplabv3_resnet50(pretrained=False, num_classes=2)
